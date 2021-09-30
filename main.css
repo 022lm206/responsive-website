@@ -14,46 +14,55 @@
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
+  
     /* Font size */
     --font-large: 48px;
     --font-medium: 28px;
     --font-regular: 18px;
     --font-small: 16px;
     --font-micro: 14px;
+  
     /* Font weight */
     --weight-bold: 700;
     --weight-semi-bold: 600;
     --weight-regular: 400;
+  
     /* Size */
     --size-border-radius: 4px;
+  
     /* Annimation */
     --animation-duration: 300ms;
   }
-  /* Universal tags */
+  
   * {
     box-sizing: border-box;
   }
+  
   body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
   }
+  
   a {
     text-decoration: none;
     color: var(--color-white);
   }
+  
   ul {
     padding-left: 0;
   }
+  
   li {
     list-style: none;
   }
+  
   button {
     background-color: transparent;
     cursor: pointer;
     border: none;
     outline: none;
-    padding: 0;
   }
+  
   /* Typography */
   h1 {
     font-size: var(--font-large);
@@ -61,18 +70,21 @@
     color: var(--color-black);
     margin: 16px 0px;
   }
+  
   h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     color: var(--color-black);
     margin: 8px 0;
   }
+  
   h3 {
     font-size: var(--font-regular);
     font-weight: var(--font-regular);
     color: var(--color-black);
     margin: 8px 0;
   }
+  
   p {
     font-size: var(--font-regular);
     font-weight: var(--font-regular);
@@ -80,39 +92,46 @@
     margin: 4px 0;
   }
 
-  
-  /* Navbar */
+/* Navbar */
 #navbar{
     background-color: var(--color-pink);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-}
-.navbar_logo {
+  }
+
+.navbar_logo{
     font-size: var(--font-medium);
+    color: var(--color-white);
+    font-weight: var(--weight-bold);
 }
+
 .navbar_menu{
     display: flex;
 }
+
 .navbar_menu_item{
     padding: 8px 12px;
     margin: 0 4px;
-    color: varI(--color-white);
+    color: var(--color-white);
     cursor: pointer;
 }
+
 .navbar_menu_item.active{
     border: 1px solid var (--color-white);
     border-radius: var(--size-border-radius);
 }
+
 .navbar_menu_item:hover{
     background-color: var(--color-dark-pink);
     border-radius: var(--size-border-radius);
 }
+
 /* Home */
 #home {
-    background: url(../responsive-website/imgs/background.png)center cover no-repeat ;
-    padding: 40px;
+    background: url(../responsive-website/imgs/home-background.png) center/cover no-repeat ;
+    padding: 20px;
     text-align: center;
 }
 .home_avatar {
@@ -120,21 +139,20 @@
     height: 250px;
     border-radius: 50%;
     border: 2px solid var(--color-white);
-
 }
 
-.home title,
+.home_title,
 .home_description{
-    color: var(--color-white);
-
+    color: var(--color-black);
 }
-home_contact{
-    color: var(--color-white);
+
+.home_contact {
+    color: var(--color-black);
     font-size: var(--font-regular);
     font-weight: var(--weight-bold);
     margin: 24px;
-    border: 2px solid var(--color-white);
-    border-radius: var(--color-white);
+    border: 2px solid var(--color-black);
+    border-radius: var(--size-border-radius);
     padding: 8px 12px;
 }
 
@@ -144,6 +162,7 @@ home_contact{
     text-align: center;
     margin: auto;
 }
+
 .section_contaioner {
     max-width: 1200px;
     margin: auto;
@@ -155,6 +174,7 @@ home_contact{
     justify-content: space-between;
     margin: 80px 0;
 }
+
 .major_icon {
     width: 170px;
     height: 170px;
@@ -208,12 +228,14 @@ home_contact{
 #skills {
     background-color: var(--color-yellow);
 }
+
 .skillset {
     display: flex;
     background-color: var(--color-light-grey);
     color: var(--color-light-white);
     margin: 20px 0;
 }
+
 .skillset_title {
     color: var(--color-white);
 }
