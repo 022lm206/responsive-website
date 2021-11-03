@@ -86,10 +86,11 @@ p {
   justify-content: space-between;
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
-#navbar.navbar--dark; {
-  background-color: var(--color-pink)
+#navbar.navbar--dark {
+  background-color: var(--color-pink);
   /* padding 8px */
 }
 .navbar_logo {
@@ -106,12 +107,11 @@ p {
   color: var(--color-white);
   cursor: pointer;
 }
-.navbar_menu_item:active {
-  border: 1px solid var(--color-white);
-  border-radius: var(--size-border-radius);
-}
+
 .navbar_menu_item:hover {
   background-color: var(--color-dark-pink);
+  border-radius: var(--size-border-radius);
+  border: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
 /* Home */
